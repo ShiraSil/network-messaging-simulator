@@ -4,6 +4,11 @@ An interactive web-based simulation modeling a distributed client-server network
 
 ---
 
+## Application Preview
+
+<img width="1367" height="865" alt="צילום מסך 2026-09-10 003358" src="https://github.com/user-attachments/assets/92f6b774-3b3e-4f64-bc52-0f1dead352fd" />
+<img width="853" height="480" alt="example" src="https://github.com/user-attachments/assets/8825cfa1-90ab-4d93-9e46-7e975c249390" />
+
 ## Architecture & Class Design
 
 The application adheres to core Object-Oriented Programming (OOP) and separation-of-concerns principles, modeling network components as independent entities:
@@ -31,7 +36,6 @@ The application adheres to core Object-Oriented Programming (OOP) and separation
 ![HTML5](https://img.shields.io/badge/Markup-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/Styling-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![Architecture](https://img.shields.io/badge/Pattern-OOP_Decoupled-blue?style=flat-square)
-![VCS](https://img.shields.io/badge/VCS-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 ---
 
@@ -45,7 +49,7 @@ A modern web browser (Google Chrome, Mozilla Firefox, Microsoft Edge).
 
 **1. Clone the repository:**
    ```bash
-   git clone [https://github.com/ShiraSil/network-messaging-simulator.git](https://github.com/ShiraSil/network-messaging-simulator.git)
+   git clone https://github.com/ShiraSil/network-messaging-simulator.git
    cd network-messaging-simulator
    ```
 
