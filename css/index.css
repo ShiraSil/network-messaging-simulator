@@ -1,0 +1,254 @@
+body {
+    background-color: #36363b;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 2rem;
+    font-family: "Comic Neue", cursive;
+    font-size: large;
+}
+
+#addClient {
+    width: 280px;
+    padding: 1rem;
+    background-color: #000;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#addClient input,
+#addClient button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: "Comic Neue", cursive;
+    font-size: large;
+}
+
+#addClient input {
+    width: 200px;
+}
+
+#addClient button {
+    background-color: rgb(43, 129, 100);
+    color: white;
+    cursor: pointer;
+}
+
+#addClient button:hover {
+    background-color: rgb(28, 92, 71);
+}
+
+#AllEmailBoxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.emailBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.emailBox input,
+.emailBox textarea {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: "Comic Neue", cursive;
+    font-size: large;
+}
+
+.sendEmail {
+    background-color: rgb(43, 129, 100);
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    font-family: "Comic Neue", cursive;
+    font-size: large;
+}
+
+.sendEmail:hover {
+    background-color: rgb(28, 92, 71);
+}
+
+h3 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+#server {
+    position: absolute;
+    right: 14px;
+    top: 2.5%;
+    width: 15%;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1%;
+    padding-bottom: 2rem;
+}
+
+.serverDrawer {
+    width: 75%;
+    height: 60px;
+    padding: 6%;
+    margin: 7%;
+    margin-top: 8%;
+    background-color: #555;
+    border-radius: 8px;
+}
+
+#serverText {
+    color: rgb(43, 129, 100);
+}
+
+.clientName {
+    color: rgb(43, 129, 100);
+    text-align: center;
+}
+
+
+.emailAndReceivedWrapper {
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 1rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: stretch;
+    position: relative;
+}
+
+
+.ReceivedEmail {
+    background-color: #4a4a4a;
+    padding: 0.5rem;
+    border-radius: 12px;
+    font-size: 16px;
+    color: white;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.ReceivedEmail h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: rgb(43, 129, 100);
+    text-align: center;
+}
+
+.emailContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.1rem;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 320px;
+}
+
+#newClientText {
+    color: #696969;
+    font-weight: bold;
+}
+
+.message {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(81, 105, 97);
+    color: black;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 170px;
+    font-family: "Comic Neue", cursive;
+    font-size: large;
+}
+
+.message p {
+    margin: 5px 0 0 0;
+}
+
+.message button {
+    background-color: #cccccc00;
+    border-style: none;
+}
+
+.cable {
+    background-color: #000;
+    width: 165%;
+    margin-left: 96.8%;
+    padding: 5px;
+    margin-top: 40%;
+    opacity: 2;
+    position: absolute;
+
+}
+
+.envelopeImg {
+    position: absolute;
+    height: 100px;
+    z-index: 1000;
+    top: -43px;
+    pointer-events: none;
+}
+
+.toServer {
+    animation: flyToServer 4s linear forwards;
+}
+
+.toClient {
+    animation: flyToClient 4s linear forwards;
+}
+
+
+@keyframes flyToServer {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+
+    90% {
+        transform: translate(650px, 0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(650px, 0px);
+        opacity: 0;
+    }
+}
+
+@keyframes flyToClient {
+    0% {
+        transform: translate(650px, 0px);
+        opacity: 1;
+    }
+
+    90% {
+        transform: translate(-50px, 0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-70px, 0px);
+        opacity: 0;
+    }
+}

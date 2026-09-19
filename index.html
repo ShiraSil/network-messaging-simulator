@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" href="./images/envelopeIcon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Email boxes</title>
+  </head>
+
+  <body>
+    <form id="addClient">
+      <label for="newClientName" id="newClientName">New client name:</label
+      ><br />
+      <input
+        type="text"
+        name="newClientNameText"
+        id="newClientNameText"
+        required
+      /><br />
+      <button type="submit" id="addClientButton">+ Add client</button>
+    </form>
+    <div id="AllEmailBoxes">
+      <template class="userEmailTemplate">
+        <div class="emailAndReceivedWrapper">
+          <form class="emailBox">
+            <h3 class="clientName"></h3>
+            <label for="name">👤 To:</label>
+            <input type="text" name="userName" class="toUser" required /><br />
+            <label for="text">🖋️ Text:</label>
+            <textarea
+              class="textOfMessage"
+              rows="5"
+              cols="25"
+              type="text"
+              name="textOfMessage"
+              required
+            ></textarea
+            ><br />
+            <button type="submit" class="sendEmail">Send</button>
+          </form>
+          <div class="ReceivedEmail">
+            <h4>✉️Received emails:</h4>
+            <div class="emailContent"></div>
+          </div>
+          <div class="cable">
+            <template class="envelopeAnimation1">
+              <img
+                src="./images/envelopeAnimation.png"
+                class="envelopeImg toServer"
+              />
+            </template>
+            <template class="envelopeAnimation2">
+              <img
+                src="./images/envelopeAnimation.png"
+                class="envelopeImg toClient"
+              />
+            </template>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <div id="server">
+      <h2 id="serverText">SERVER</h2>
+      <div class="serverDrawer"></div>
+      <div class="serverDrawer"></div>
+      <div class="serverDrawer"></div>
+    </div>
+  </body>
+  <script src="./js/Package.js"></script>
+  <script src="./js/Cable.js"></script>
+  <script src="./js/Client.js"></script>
+  <script src="./js/Server.js"></script>
+  <script src="./js/main.js"></script>
+</html>
