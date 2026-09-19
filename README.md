@@ -43,13 +43,13 @@ A modern web browser (Google Chrome, Mozilla Firefox, Microsoft Edge).
 
 ### Running Locally
 
-1. **Clone the repository:**
+**1. Clone the repository:**
    ```bash
    git clone [https://github.com/ShiraSil/network-messaging-simulator.git](https://github.com/ShiraSil/network-messaging-simulator.git)
    cd network-messaging-simulator
    ```
 
-2. **Open the application:**
+**2. Open the application:**
 
 Open index.html directly in any browser.
 
@@ -57,6 +57,7 @@ Or run with VS Code's Live Server extension.
 
 ## Project Structure
 
+```text
 network-messaging-simulator/
 │
 ├── css/
@@ -74,3 +75,4 @@ network-messaging-simulator/
 ├── index.html
 ├── .gitignore
 └── README.md
+```
