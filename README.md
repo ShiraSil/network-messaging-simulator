@@ -2,6 +2,8 @@
 
 An interactive web-based simulation modeling a distributed client-server network architecture. The project visualizes packet transmission pipelines, centralized routing logic, and transmission queuing between connected clients and a central server using Object-Oriented JavaScript.
 
+**[Live Demo](https://ShiraSil.github.io/network-messaging-simulator/)**
+
 ---
 
 ## Application Preview
@@ -80,3 +82,10 @@ network-messaging-simulator/
 ├── .gitignore
 └── README.md
 ```
+
+---
+
+## Authors
+
+* **Shira Silberman** - [GitHub Profile](https://github.com/ShiraSil)
+* **Ruth Schiff** - [GitHub Profile](https://github.com/r0533154639-arch)
